@@ -100,7 +100,7 @@ function App() {
             className="copy-button"
             title="Copy to clipboard"
           >
-            ⎘
+            copy ⎘
           </button>
         )}
         <div className="response-content">
