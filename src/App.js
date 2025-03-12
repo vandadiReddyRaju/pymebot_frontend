@@ -21,7 +21,7 @@ function App() {
 
     try {
       setIsLoading(true);
-      const response = await fetch('http://127.0.0.1:8000/api/submit', {
+      const response = await fetch('https://pymebot-backend.onrender.com/api/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ questionId, query, code }),
@@ -47,7 +47,7 @@ function App() {
   return (
     <div className="container">
       <div className="form-container">
-        <h2 className="heading">Student Query Form</h2>
+        <h2 className="heading">PyMeBot</h2>
         <form onSubmit={handleSubmit} className="form">
           <div className="form-group">
             <label>Question ID:</label>
